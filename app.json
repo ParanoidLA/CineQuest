@@ -5,23 +5,39 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lakshyagrawal.TheMovieApp",
+      "scheme": "themovieapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.lakshyagrawal.TheMovieApp",
+      "permissions": [
+        "INTERNET"
+      ],
+      "scheme": "themovieapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "entryPoint": "./App.js",
+    "extra": {
+      "eas": {
+        "projectId": "0dad2ac7-84bd-4ca0-b376-453b1fedbfab"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
